@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love </title>
+    <style>
+        body {
+            background-color:#FF6EC7; /* Red background */
+            color:#0A2472; /* Black text */
+            font-family:"Comic Sans MS",cursive;
+            text-align: center;
+            font-size: 25px; /* Bigger emojis */
+            font-weight: bold;
+            margin-top: 25px;
+        }
+        #output {
+            font-size: 25px; /* Increase emoji size */
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div> <!-- Container for emojis -->
+
+    <script>
+        let i = 1;
+        let outputDiv = document.getElementById("output");
+
+        let interval = setInterval(function () {
+            outputDiv.innerHTML +=  "&#9829HAPPY VALENTINE'S DAY&#9829"; // Adds one heart each time
+            i++;
+            if (i > 1000) {
+                clearInterval(interval); // Stops after 100 emojis
+            }
+        }, 80); // 1.5-second delay
+    </script>
+</body>
+</html>
